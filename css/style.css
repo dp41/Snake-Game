@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background: url("../img/bg.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 10px;
+    left: 55px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+#highScoreBox{
+    position: absolute;
+    top:80px;
+    left: 55px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#board{
+    background: linear-gradient(rgb(230, 230, 134), rgb(138, 221, 138));
+    width: 70vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background-color: rgb(0, 81, 255);
+    border: 2px solid black;
+    transform: scale(1.2);
+
+}
+.snake{
+    background-color: rgb(97, 179, 233);
+    border: 2px solid black;
+    transform: scale(1.2);
+}
+
+.food{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 21px;
+}
